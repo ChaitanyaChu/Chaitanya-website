@@ -2,24 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom animations */
+/* GLOBAL SETTINGS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-gray-800 bg-white font-sans;
+}
+
+/* ANIMATIONS */
 @layer utilities {
   @keyframes fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @keyframes slide-up {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .animate-fade-in {
-    animation: fade-in 1s ease-out both;
+    animation: fade-in 0.8s ease-out both;
   }
 
   .animate-slide-up {
-    animation: slide-up 1s ease-out both;
+    animation: slide-up 0.8s ease-out both;
   }
 
   .transition-colors {
@@ -39,7 +60,13 @@
   }
 }
 
-/* Optional: sticky header shadow enhancement */
-.sticky.shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* CUSTOM GRADIENT BACKGROUNDS (optional utility classes) */
+.bg-soft-gradient {
+  background: linear-gradient(to bottom right, #f0f9ff, #e0e7ff);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

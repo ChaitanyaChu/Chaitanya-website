@@ -1,42 +1,30 @@
 ---
-import '../styles/global.css';
-import Analytics from '@vercel/analytics';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import Projects from '../components/Projects.astro';
-import Certifications from '../components/Certifications.astro';
 import WorkExperience from '../components/WorkExperience.astro';
 import Resume from '../components/Resume.astro';
 import Contact from '../components/Contact.astro';
+import Certifications from '../components/Certifications.astro';
 ---
 
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaitanya Chunduri</title>
-    <script>
-      let isDark = false;
-      function toggleTheme() {
-        const html = document.documentElement;
-        isDark = !isDark;
-        if (isDark) {
-          html.classList.add('dark');
-        } else {
-          html.classList.remove('dark');
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
 
-  <body class="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <body class="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
     <Navbar />
-    <main class="max-w-5xl mx-auto pt-24 space-y-16">
+
+    <main class="max-w-5xl mx-auto pt-24 space-y-16 px-4">
       <Hero />
       <Projects />
-      <Certifications />
       <WorkExperience />
       <Resume />
+      <Certifications />
       <Contact />
     </main>
   </body>

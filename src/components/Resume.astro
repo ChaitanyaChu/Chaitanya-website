@@ -1,12 +1,29 @@
-<section id="resume" class="bg-gradient-to-br from-white via-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 px-6 text-center animate-fade-in scroll-fade transition-colors">
-    <h3 class="text-4xl font-extrabold text-blue-800 dark:text-white mb-6">Resume</h3>
-    <div class="flex justify-center gap-6 flex-wrap">
-      <a href="/Chaitanya_Chunduri_Data Science.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition shadow-md">
-        📄 Download Resume
-      </a>
-      <a href="https://www.linkedin.com/in/chaitanya-chunduri" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 transition shadow-md">
-        🔗 View LinkedIn
-      </a>
-    </div>
-  </section>
+---
+// Resume.astro
+---
+<section
+  id="resume"
+  class="bg-gradient-to-br from-white via-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-6 text-center animate-fade-in scroll-fade transition-colors"
+>
+  <h3 class="text-4xl font-extrabold text-blue-800 dark:text-white mb-10">Resume</h3>
   
+  <div class="flex flex-wrap justify-center gap-6">
+    <!-- Resume Download Button -->
+    <a
+      href="/Chaitanya_Chunduri_Data Science.pdf"
+      download
+      class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300"
+    >
+      📄 <span class="font-medium">Download Resume</span>
+    </a>
+
+    <!-- LinkedIn Button -->
+    <a
+      href="https://www.linkedin.com/in/chaitanya-chunduri"
+      target="_blank"
+      class="inline-flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-full shadow-lg hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300"
+    >
+      🔗 <span class="font-medium">View LinkedIn</span>
+    </a>
+  </div>
+</section>

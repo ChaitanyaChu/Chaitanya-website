@@ -1,25 +1,45 @@
-<section id="contact" class="py-16 px-6 bg-gradient-to-br from-white via-green-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-center animate-fade-in scroll-fade transition-colors">
-    <h3 class="text-4xl font-extrabold text-green-800 dark:text-green-300 mb-6">Contact</h3>
-    <div class="text-lg text-gray-700 dark:text-gray-300 space-y-4">
-      <p>
-        📧 Email: <a href="mailto:chaitanya.chunduri1312@gmail.com" class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300">chaitanya.chunduri1312@gmail.com</a>
-      </p>
-      <p>
-        📞 Phone: <a href="tel:19402992291" class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300">(940) 299-2291</a>
-      </p>
-      <p>📍 Location: Dallas, TX</p>
-      <p>
-        🔗 LinkedIn: <a href="https://www.linkedin.com/in/chaitanya-chunduri" target="_blank" class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300">linkedin.com/in/chaitanya-chunduri</a>
-      </p>
-    </div>
-  </section>
-  
-  <style>
-  @keyframes fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .scroll-fade {
-    animation: fade-in 1s ease-out both;
-  }
-  </style>
+---
+// Contact.astro
+---
+
+<section
+  id="contact"
+  class="py-20 px-6 bg-gradient-to-br from-white via-green-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-center animate-fade-in scroll-fade transition-colors"
+>
+  <h3 class="text-4xl font-extrabold text-green-800 dark:text-green-300 mb-8">
+    Contact
+  </h3>
+
+  <div class="text-lg text-gray-700 dark:text-gray-300 space-y-4 max-w-xl mx-auto">
+    <p>
+      📧 <strong>Email:</strong>
+      <a
+        href="mailto:chaitanya.chunduri1312@gmail.com"
+        class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300 transition-colors"
+      >
+        chaitanya.chunduri1312@gmail.com
+      </a>
+    </p>
+    <p>
+      📞 <strong>Phone:</strong>
+      <a
+        href="tel:19402992291"
+        class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300 transition-colors"
+      >
+        (940) 299-2291
+      </a>
+    </p>
+    <p>📍 <strong>Location:</strong> Dallas, TX</p>
+    <p>
+      🔗 <strong>LinkedIn:</strong>
+      <a
+        href="https://www.linkedin.com/in/chaitanya-chunduri"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-green-700 dark:text-green-400 underline hover:text-green-900 dark:hover:text-green-300 transition-colors"
+      >
+        linkedin.com/in/chaitanya-chunduri
+      </a>
+    </p>
+  </div>
+</section>

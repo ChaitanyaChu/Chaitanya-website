@@ -1,10 +1,7 @@
-// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{astro,html,js,jsx,ts,tsx}', // Ensures Tailwind scans all your Astro + JS/TS files
-  ],
-  darkMode: 'class', // Enables class-based dark mode toggle
+  content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       keyframes: {
@@ -14,7 +11,7 @@ module.exports = {
         }
       },
       animation: {
-        'fade-in': 'fade-in 0.8s ease-out',
+        'fade-in': 'fade-in 0.8s ease-out forwards',
       }
     },
   },
